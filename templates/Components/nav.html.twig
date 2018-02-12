@@ -1,0 +1,11 @@
+{% import "macros.html.twig" as macro %}
+<div id="nav-row" class="row justify-content-center {#pb-3#} py-3">
+    <a class="col-auto {{ macro.setActive('index') }}" href="{{ path('index') }}">Accueil</a>
+    <a class="col-auto {{ macro.setActive('specialites') }}" href="{{ path('specialites') }}">Spécialités</a>
+    <a class="col-auto {{ macro.setActive('groupes') }}" href="{{ path('groupes') }}">Sophrologie en groupe</a>
+    {#<a class="col-auto {{ macro.setActive('techniques') }}" href="{{ path('techniques') }}">Techniques utilisées</a>#}
+    {#<a class="col-auto {{ macro.setActive('applications') }}" href="{{ path('applications') }}">Domaines d'application</a>#}
+    <a class="col-auto " href="#">Parcours</a>
+    <a class="col-auto " href="#">Témoignages</a>
+    <a class="col-auto " href="#">Contact</a>
+</div>

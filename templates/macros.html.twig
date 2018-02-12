@@ -1,0 +1,4 @@
+
+{% macro setActive(route) %}
+    {% if app.request.attributes.get('_route') ==  route  %} active {% endif %}
+{% endmacro %}

@@ -1,0 +1,21 @@
+{% extends "Base/base.html.twig" %}
+
+{% block body %}
+    <div id="header-container" class="container-fluid">
+        {{ include("Components/header.html.twig") }}
+    </div>
+
+    <div id="nav-container"  class="container-fluid">
+        {{ include("Components/nav.html.twig") }}
+    </div>
+
+        <div id="content-top-container" class="container-fluid">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+
+    <div id="footer-container" class="container-fluid d-none d-md-block">
+        {{ include("Components/footer.html.twig") }}
+    </div>
+{% endblock %}

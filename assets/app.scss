@@ -1,0 +1,87 @@
+$fa-font-path: "~font-awesome/fonts";
+
+@import '~bootstrap/scss/bootstrap.scss';
+@import '~font-awesome/scss/font-awesome.scss';
+
+$color_green: #d5e5c9;
+$color-prime: #69922c;
+
+//$font-family-base: "./assets/fonts";
+
+body {
+  background-color: $color_green;
+}
+
+#header-container {
+  #header-row {
+    background-color: $color-prime;
+    #header-title-col {}
+    #header-contact-col {
+      #header-contact-text {
+        color: #B0C4DE;
+      }
+
+    }
+  }
+}
+
+#nav-container {
+  #nav-row {
+    a {
+      color: $color-prime;
+      &:hover {
+        color: $color-prime;
+        text-decoration: none;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border: 2px solid $color-prime;
+        border-radius: 50px 20px;
+      }
+
+      &.active {
+        color: $color-prime;
+        text-decoration: none;
+        -webkit-border-radius: 8px;
+        -moz-border-radius: 8px;
+        border: 2px solid $color-prime;
+        border-radius: 50px 20px;
+      }
+    }
+  }
+}
+
+#content-top-container {
+  #content-top-row {
+    #sidenav-col {
+      #list-tab {
+        a {
+          //border-color: $color-prime ;
+          &:hover {
+
+          }
+
+          &.active {
+            background-color: $color-prime;
+            border-color: $color-prime;
+          }
+        }
+      }
+    }
+    #content-col {
+      h5, div {
+        //color: white;
+      }
+
+    }
+  }
+}
+
+#footer-container {
+  #footer-row {
+    background-color: $color-prime;
+    .footer-style {
+      color: #B0C4DE;
+    }
+  }
+}
+

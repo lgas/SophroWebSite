@@ -1,0 +1,13 @@
+{% extends "home.html.twig" %}
+
+{% set currentRoute = app.request.attributes.get('_route') %}
+
+{% block content %}
+    {% if currentRoute == 'specialites' or currentRoute == 'groupes' %}
+        {% include 'Components/Contents/sidenavcontent.html.twig' with datas %}
+    {% elseif currentRoute == 'index'%}
+        {% include 'Components/Contents/regularcontent.html.twig' with datas%}
+    {% elseif currentRoute == 'techniques' or currentRoute == 'applications'%}
+        {% include 'Components/Contents/listcontent.html.twig' with datas%}
+    {% endif %}
+{% endblock %}
