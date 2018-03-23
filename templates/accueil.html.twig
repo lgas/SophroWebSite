@@ -1,0 +1,100 @@
+{% extends "home.html.twig" %}
+
+{% block content %}
+    <div id="content-top-row" class="row">
+        {#<div class="col-sm-1"></div>#}
+
+
+
+        <div id="sidenav-col" class="col-md-2 col-xs-12 mb-3">
+            <div class="list-group" id="list-tab" role="tablist">
+
+                <a class="list-group-item list-group-item-action active" id="list-sophro-list" data-toggle="list" href="#list-sophro" role="tab" aria-controls="sophro">La Sophrologie, Quesako ?</a>
+                <a class="list-group-item list-group-item-action" id="list-app-list" data-toggle="list" href="#list-app" role="tab" aria-controls="app">Domaines d'applications</a>
+                <a class="list-group-item list-group-item-action" id="list-techniques-list" data-toggle="list" href="#list-techniques" role="tab" aria-controls="techniques">Techniques utilisées</a>
+
+            </div>
+        </div>
+
+
+        {#<div class="col-sm-1"></div>#}
+
+
+
+        <div id="content-col" class="col-md-8 col-xs-12">
+            <div class="tab-content" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-sophro" role="tabpanel" aria-labelledby="list-sophro-list">
+
+                    <h5>La Sophro-Relaxation</h5>
+                    <div class="mx-2 mt-2 mb-4">
+                        La Sophro-Relaxation est une méthode préventive et
+                        thérapeutique qui propose un ensemble de
+                        techniques basées sur la respiration , la visualisation
+                        positive et des méthodes psychocorporelles.
+
+                        Elle aide au développement personnel visant
+                        l’harmonie Corps-Esprit :
+
+                        C’est en considérant l’individu dans sa globalité que
+                        la sophrologie permet un accompagnement
+                        efficace dans les périodes de difficultés ou tout
+                        simplement dans le développement et
+                        l’épanouissement personnel, familial ou professionnel.
+
+                        C’est à travers des applications simples et
+                        ludiques quelle vous accompagnera vers un équilibre
+                        permettant de sortir de l’agitation mentale et de
+                        transformer en force positive votre quotidien.
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="list-app" role="tabpanel" aria-labelledby="list-app-list">
+
+                    <h5>Domaines d'applications</h5>
+                    <div class="mx-2 mt-2 mb-4">
+                        Gestion du stress, de l’anxiété, des angoisses
+                        et de la dépression.
+                        Gestion de la douleur, des troubles
+                        psychosomatiques, des phobies.
+                        Apprentissage d’une part, à gérer calmement
+                        une crise de spasmophilie ou de tétanie.
+                        D’autre part, apprendre les techniques préventives
+                        afin d’éviter ou de limiter les récidives.
+                        La Sophro-Relaxation peut aider les asthmatiques.
+                        Techniquement, elle propose au sujet d’apprendre
+                        à respirer, à se détendre et à récupérer.,
+                        Gestion des troubles du sommeil.,
+                        Réduction des tensions physiques et
+                        psychologiques.
+                        Développement de la confiance en soi,
+                        l’estime de soi et de son potentiel.
+                        Compréhension et gestion de ses émotions,
+                        mieux se connaitre et s’affirmer en améliorant
+                        sa communication avec soi et les autres.
+                        Développement d’une pensée positive et
+                        constructive.
+                        Se préparer sereinement aux examens,
+                        aux projets personnels, professionnels, sportifs…
+                        Développement de la mémoire et de la
+                        concentration.
+                        Gestion de ses dépendances (alcool, tabagisme, alimentation…)
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="list-techniques" role="tabpanel" aria-labelledby="list-techniques-list">
+
+                    <h5>Techniques utilisées</h5>
+                    <div class="mx-2 mt-2 mb-4">
+                        Relaxation
+                        Respiration et la gestion du souffle
+                        Détente musculaire et mentale
+                        Visualisation positive
+                        Sophro-Relaxation Energétique
+                        Concentration et mémorisation
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-2"></div>
+    </div>
+{% endblock %}
